@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ajiri-resume-screener",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-25",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "NEXT_API_URL": "http://localhost:3000"
+  },
+  "workflows": [
+    {
+      "name": "screening-workflow",
+      "binding": "SCREENING_WORKFLOW",
+      "class_name": "ScreeningWorkflow"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ajiri-resume-screener",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "wrangler": "^4.68.1"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.31",
+    "ai": "^6.0.99",
+    "zod": "^4.3.6"
+  }
+}
